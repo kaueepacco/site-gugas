@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bolão da Copa 2026</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Bolão da Copa 2026 ⚽</h1>
+  <header>
+    <div class="logo">🏆 Bolão Copa 2026</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="palpites.html">Copa 2026</a>
+      <a href="#regras">Regras</a>
+      <a href="osgugas.html">La Famiglia</a>
+    </nav>
+  </header>
 
-  <form id="formPalpite">
-    <label>Nome:</label><br>
-    <input type="text" id="usuario" required><br><br>
+  <section class="slider">
+    <div class="slides">
+      <div class="slide active">
+        <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1600&q=80" alt="Estádio 1">
+        <div class="caption">A emoção da Copa 2026 está chegando!</div>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1506459225024-1428097a7e18?auto=format&fit=crop&w=1600&q=80" alt="Torcida">
+        <div class="caption">Participe do nosso bolão e desafie seus amigos!</div>
+      </div>
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1599697080588-49e3b2ecf64a?auto=format&fit=crop&w=1600&q=80" alt="Taça">
+        <div class="caption">Quem será o campeão? Dê seu palpite!</div>
+      </div>
+    </div>
 
-    <label>Jogo:</label><br>
-    <select id="jogo">
-      <option value="Brasil x França">Brasil x Argentina</option>
-      <option value="Argentina x Alemanha">França x Alemanha</option>
-      <option value="Espanha x Itália">Espanha x Itália</option>
-    </select><br><br>
+    <div class="controls">
+      <span class="prev">❮</span>
+      <span class="next">❯</span>
+    </div>
+  </section>
 
-    <label>Placar Casa:</label><br>
-    <input type="number" id="placarCasa" min="0" required><br><br>
+  <section class="cta">
+    <h2>Entre no clima da Copa!</h2>
+    <p>Faça seus palpites, acompanhe os resultados e dispute com seus amigos!</p>
+    <a href="bolao.html" class="btn">Participar do Bolão</a>
+  </section>
 
-    <label>Placar Fora:</label><br>
-    <input type="number" id="placarFora" min="0" required><br><br>
+  <footer>
+    <p>👻 Desenvolvido por Kaue Pacco | EaiiGustavos 🌎</p>
+  </footer>
 
-    <button type="submit">Enviar Palpite</button>
-  </form>
-
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
