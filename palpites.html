@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bolão da Copa 2026</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bolão Gugas</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Bolão da Copa 2026 ⚽</h1>
+  <header>
+    <div class="titulo">🏆 EaiiGustavos</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="palpites.html">Copa 2026</a>
+      <a href="awards.html">Awards</a>
+      <a href="osgugas.html">La Famiglia</a>
+    </nav>
+  </header>
+<body><br>
+  <section class="formulario card-list">
+  <h2>Envie seu Palpite</h2>
 
   <form id="formPalpite">
-    <label>Nome:</label><br>
-    <input type="text" id="usuario" required><br><br>
+    <div class="form-group">
+      <label for="usuario">Seu Nome</label>
+      <input type="text" id="usuario" placeholder="Digite seu nome completo" required>
+    </div>
 
-    <label>Jogo:</label><br>
-    <select id="jogo">
-      <option value="Brasil x França">Brasil x Argentina</option>
-      <option value="Argentina x Alemanha">França x Alemanha</option>
-      <option value="Espanha x Itália">Espanha x Itália</option>
-    </select><br><br>
+    <div class="form-group">
+      <label for="jogo">Selecione o Jogo</label>
+      <select id="jogo" required>
+        <option value="">Escolha uma partida...</option>
+        <option value="Brasil x Argentina">Brasil x Argentina</option>
+        <option value="França x Alemanha">França x Alemanha</option>
+        <option value="Espanha x Inglaterra">Espanha x Inglaterra</option>
+        <option value="Portugal x Uruguai">Portugal x Uruguai</option>
+      </select>
+    </div>
 
-    <label>Placar Casa:</label><br>
-    <input type="number" id="placarCasa" min="0" required><br><br>
-
-    <label>Placar Fora:</label><br>
-    <input type="number" id="placarFora" min="0" required><br><br>
+    <div class="form-group placar">
+      <label>Seu Palpite</label>
+      <div class="placar-inputs">
+        <input type="number" id="placarCasa" placeholder="Casa" min="0" required>
+        <span>x</span>
+        <input type="number" id="placarFora" placeholder="Fora" min="0" required>
+      </div>
+    </div>
 
     <button type="submit">Enviar Palpite</button>
+    <p id="mensagem" class="msg"></p>
   </form>
+</section>
+
+<footer>
+    <p>👻 Desenvolvido por Kaue Pacco | EaiiGustavos 🌎</p>
+</footer>
 
   <script src="script.js" defer></script>
 </body>

@@ -1,4 +1,4 @@
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwxhT3JEYpbAS9pBo9qnT14hrzRbHSC-cS7ptgO333sOvZGDlpS1bvWxzdXodPTihA3Zw/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxK90nB_7dXhhbnY01N44RPegYr84xAtQMF6dNzMA7ptRH2IILf1_B0gP2HOVqB8hCETA/exec";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("formPalpite");

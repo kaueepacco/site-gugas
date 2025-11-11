@@ -25,7 +25,7 @@ header {
   backdrop-filter: blur(6px);
 }
 
-.logo {
+.titulo {
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -129,6 +129,229 @@ nav a:hover {
 .btn:hover {
   background: #ffcc00;
 }
+
+/* ===== Famiglia ===== */
+.card-list {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: rgba(255,255,255,0.1);
+  margin-top: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-list h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffd700;
+}
+
+.card-list .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.pessoa {
+  background: rgba(255,255,255,0.15);
+  padding: 1rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.pessoa:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.25);
+}
+
+.pessoa img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #ffd700;
+}
+
+.pessoa h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.pessoa p {
+  font-size: 0.95rem;
+  color: #eee;
+}
+
+/* ===== Formulario Copa =====*/
+.formulario {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.formulario h2 {
+  color: #ffd700;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.9);
+  color: #111;
+}
+
+.placar-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.placar-inputs input {
+  width: 80px;
+  text-align: center;
+}
+
+button {
+  background: #ffd700;
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ffcc00;
+}
+
+.msg {
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ===== Awards ======*/
+/* ===== REGRAS ===== */
+.regras {
+  max-width: 800px;
+  margin: 6rem auto 2rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.awards h2 {
+  color: #ffd700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.awards p {
+  font-size: 1rem;
+  color: #eee;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.lista-awards {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.lista-awards li {
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+/* ===== RESULTADOS ===== */
+.resultados {
+  max-width: 900px;
+  margin: 2rem auto 4rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.resultados h2 {
+  color: #ffd700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.resultados p {
+  font-size: 1rem;
+  color: #eee;
+  margin-bottom: 1.5rem;
+}
+
+.tabela-container {
+  overflow-x: auto;
+}
+
+.tabela-resultados {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.95);
+  color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabela-resultados th, .tabela-resultados td {
+  padding: 12px;
+  text-align: center;
+}
+
+.tabela-resultados th {
+  background: #ffd700;
+  font-weight: 700;
+}
+
+.tabela-resultados tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.tabela-resultados tr:hover {
+  background: #ffe55c;
+}
+
 
 /* ===== FOOTER ===== */
 footer {
