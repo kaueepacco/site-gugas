@@ -34,29 +34,51 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
-const totalSlides = slides.length;
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".slide");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
 
-document.querySelector(".next").addEventListener("click", nextSlide);
-document.querySelector(".prev").addEventListener("click", prevSlide);
+  let index = 0;
+  const total = slides.length;
+  const intervalTime = 5000; // 5 segundos
+  let slideInterval;
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove("active");
-    if (i === index) slide.classList.add("active");
+  function showSlide(n) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[n].classList.add("active");
+  }
+
+  function nextSlide() {
+    index = (index + 1) % total;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + total) % total;
+    showSlide(index);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    nextSlide();
+    resetInterval();
   });
-}
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % totalSlides;
-  showSlide(currentSlide);
-}
+  prevBtn.addEventListener("click", () => {
+    prevSlide();
+    resetInterval();
+  });
 
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-  showSlide(currentSlide);
-}
+  function startAutoSlide() {
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
 
-// Troca automática a cada 5 segundos
-setInterval(nextSlide, 5000);
+  function resetInterval() {
+    clearInterval(slideInterval);
+    startAutoSlide();
+  }
+
+  startAutoSlide();
+});
+
+
