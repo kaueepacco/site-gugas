@@ -81,4 +81,21 @@ document.addEventListener("DOMContentLoaded", function () {
   startAutoSlide();
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    nav.classList.toggle("active");
+  });
+
+  // Fecha o menu ao clicar em um link
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      toggle.classList.remove("active");
+      nav.classList.remove("active");
+    });
+  });
+});
 
