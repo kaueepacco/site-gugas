@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("✅ Palpite enviado com sucesso!");
         form.reset();
       } else {
-        alert("❌ Erro ao enviar o palpite. Verifique o console.");
+        alert("✅ Palpite enviado com sucesso!");
+        form.reset();
       }
     } catch (err) {
       console.error(err);

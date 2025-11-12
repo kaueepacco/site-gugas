@@ -99,6 +99,7 @@ nav a:hover {
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+  margin-top: 62px;
 }
 
 .slides {
