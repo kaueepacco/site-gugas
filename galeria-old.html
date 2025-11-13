@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EaiiGustavos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="titulo">🏆 EaiiGustavos</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="palpites.html">Copa 2026</a>
+      <a href="awards.html">Awards</a>
+      <a href="osgugas.html">La Famiglia</a>
+      <a href="galeria.html">Galeria</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <section class="galeria">
+    <h2>Galeria de Fotos e Vídeos</h2>
+    <div class="grid-galeria">
+      <!-- FOTOS -->
+      <div class="item" data-type="image" data-src="inc/images/foto1.jpeg">
+        <img src="inc/images/foto1.jpeg">
+      </div>
+      <div class="item" data-type="image" data-src="inc/images/foto2.jpeg">
+        <img src="inc/images/foto2.jpeg">
+      </div>
+      <div class="item" data-type="image" data-src="inc/images/foto3.jpeg">
+        <img src="inc/images/foto3.jpeg">
+      </div>
+
+      <!-- VÍDEOS LOCAIS -->
+      <div class="item" data-type="video" data-src="inc/videos/gol.mp4">
+        <video src="inc/videos/gol.mp4" muted></video>
+        <div class="icon-play">▶</div>
+      </div>
+
+      <!-- VÍDEO YOUTUBE 
+      <div class="item" data-type="youtube" data-src="https://www.youtube.com/embed/mYfJxlgR2jw">
+        <img src="https://img.youtube.com/vi/mYfJxlgR2jw/hqdefault.jpg" alt="Vídeo YouTube">
+        <div class="icon-play">▶</div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal" id="modal">
+    <span id="fechar">&times;</span>
+    <div id="conteudoModal"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+<footer>
+    <p>👻 Desenvolvido por Kxgs | EaiiGustavos 🌎</p>
+  </footer>
+</html>
